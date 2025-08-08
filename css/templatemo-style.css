@@ -23,12 +23,27 @@ https://templatemo.com/tm-539-simple-house
 
   /* Fondo: superposición + mosaico */
   background-image:
-    linear-gradient(rgba(230, 170, 90, 0.85), rgba(230, 170, 90, 0.85)),
-    url('../img/mozaico.jpg');
+  /*  linear-gradient(rgba(230, 170, 90, 0.85), rgba(230, 170, 90, 0.85)),*/
+    url('../img/mozaico2.jpg');
   background-repeat: repeat;
   background-size: auto;
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bienvenida-box-fondo{
+	height:600px;
+	position:relative;
+	max-width:100%;
+	 background-image:
+  /*  linear-gradient(rgba(230, 170, 90, 0.85), rgba(230, 170, 90, 0.85)),*/
+    url('../img/bienvenida-fondo.png');
+	background-size: cover;     /* ajusta la imagen al div sin deformar */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+  justify-content: center; /* centra contenido interno horizontalmente */
+  align-items: center; 
+  text-align: center;
 }
 
 .nav-container {
@@ -71,23 +86,30 @@ https://templatemo.com/tm-539-simple-house
 
 .tm-welcome-section2 {
   margin: 15px auto;
-  max-width: 655px;
-   background-color:#4d3904;
+  max-width: 1055px;
+ /*  background-color:#4d3904;*/
+ background-color: rgba(0, 0, 0, 0.2);
+ 
 }
 
 .bienvenida-box {
-  background-color: #f5e3b5;
+  /*background-color: #f5e3b5;*/
   border-radius: 16px;
-  padding: 12px;
-  margin: 1px auto;
+  padding: 1px;
+  margin: 300px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.2); /* fondo semitransparente */
+  backdrop-filter: blur(10px); /* desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+  color: #fff;
+ 
 }
 .Articulo-box {
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
-  margin: 1px 2px auto;
+  padding: 30px;
+  margin: 20px 10px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .Historia-box {
@@ -101,10 +123,13 @@ https://templatemo.com/tm-539-simple-house
 .bienvenida-box2 {
   background-color: #4d3904;
   border-radius: 16px;
-  padding: 1px;
+  padding: 20px;
   margin: 10px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  max-width: 1000px;
+  max-width: 100%;
+   justify-content: center; /* centra contenido interno horizontalmente */
+  align-items: center; 
+  text-align: center;
 }
 .bienvenida-box3 {
   background-color: #72ba81;
@@ -112,7 +137,7 @@ https://templatemo.com/tm-539-simple-house
   padding: 1px;
   margin: 10px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  max-width: 1000px;
+  max-width: 100%;
 }
 
 .tm-section-title2 {
@@ -128,6 +153,227 @@ https://templatemo.com/tm-539-simple-house
   padding-right: 10px;
   padding-left: 10px;
 }
+
+.separador2 {
+  width: 100%;
+  /*background-color: #009933; */
+  background-color: #6FD513;
+  height: 40px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.separador3 {
+  width: 100%;
+  /*background-color: #009933; */
+  background-image:
+  /*  linear-gradient(rgba(230, 170, 90, 0.85), rgba(230, 170, 90, 0.85)),*/
+    url('../img/mozaico2.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactanos2 {
+  width: 100%;
+  /*background-color: #009933; */
+  background-color: #6FD513;
+  height: auto;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.fila-mv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+}
+
+.seccion5 {
+  position: relative;
+  flex: 1 1 33.3333%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.mision5::before,
+.vision5::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(0.5);
+  z-ind
+}
+
+.imagen-extra::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1); /* opcional */
+  z-index: 1;
+}
+
+.contenido5 {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.mision5 {
+  background-image: url('../img/cacao-img.jpg');
+}
+
+.vision5 {
+  background-image: url('../img/bananos-img.jpg');
+}
+
+.imagen-extra {
+  background-image: url('../img/mision-vision.jpeg');
+}
+
+@media (max-width: 768px) {
+  .fila-mvv {
+    flex-direction: column;
+  }
+
+  .seccion5 {
+    flex: 1 1 100%;
+    height: 50vh;
+  }
+  .seccion6 {
+    flex: 1 1 100%;
+    height: 50vh;
+  }
+}
+
+
+.carrusel-contenedor {
+  position: relative;
+  width: 100%; /* Ocupa todo el ancho */
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3); /* 3 imágenes visibles siempre */
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.slide button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.izquierda {
+  left: 0;
+}
+
+.derecha {
+  right: 0;
+}
+
+/* Botón "Ver más" */
+.ver-mas {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(34, 139, 34, 0.8); /* verde semitransparente */
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: rgba(34, 139, 34, 1);
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.descuento-box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+  margin: px 1px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.img-descuento {
+  max-width: 100%;
+  height: 350px;
+}
+
 /*-------------------- */
 
 ul, nav, body, h1, h2, h4, h6, p, figure {
@@ -512,7 +758,7 @@ p, address {
 }
 
 .tm-gallery-item {
-  max-width: 250px;
+  max-width: 285px;
 }
 
 .tm-gallery-img {
@@ -596,7 +842,7 @@ p, address {
 
 .tm-footer {
   padding: 25px 15px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .tm-footer a {
@@ -702,6 +948,7 @@ p, address {
 
 .tm-history {
   margin-top: 45px;
+  margin-bottom:20px;
 }
 
 .tm-history-inner {
@@ -845,7 +1092,7 @@ address {
 
 @media (min-width: 768px) {
  .tm-address-box {
-    max-width: 315px;
+    max-width: 335px;
   } 
 }
 
